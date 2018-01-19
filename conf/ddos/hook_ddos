@@ -1,0 +1,8 @@
+#!/bin/sh
+source /usr/local/ddos/ddos.conf
+
+while(true)
+do
+	/usr/local/ddos/ddos.sh -k &>/dev/null;
+	sleep $FREQ;
+done

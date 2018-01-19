@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /root
+wget http://vnser.oss-cn-shanghai.aliyuncs.com/software-package/vnser-web-install.zip
+#安装unzip
+yum install unzip -y
+unzip vnser-web-install.zip -d install
+cd install
+chmod -R 777 ./
+./install.sh

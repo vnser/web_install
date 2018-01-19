@@ -1,0 +1,4 @@
+if (!-e $request_filename) {
+    rewrite ^(.*)$ /index.php$1;
+    #rewrite ^/Jact_robfaty/(.*)$ /Jact_robfaty/index.php/$1;
+}
